@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    font-family: var(--font-dm-sans);
 }
 
 .sidebar{
@@ -23,10 +24,6 @@ body{
  padding: 16px 0 0 16px;
 }
 
-.sidebar__navigation .logo:hover{
-   zoom: 105%;
-}
-
 .sidebar__navigation .logo img{
     width: 80px;
 }
@@ -46,13 +43,8 @@ body{
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
-    font-family: "DM Sans", sans-serif;
 }
 
-.sidebar nav ul li a:hover{
-    color: #fff;
-    zoom: 110%;
-}
 .library{
     background-color: #121212;
     border-radius: 8px;
@@ -79,17 +71,11 @@ body{
     border: 0px;
     font-size: 14px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-align: center;
     text-decoration: none;
     text-transform: none;
     padding: 20px 10px;
     cursor: pointer;
-}
-
-.library .library__button:hover{
-    color: #fff;
-    zoom: 105%;
 }
 
 .library .library__button .fa{
@@ -102,11 +88,6 @@ body{
 .library .library__content .fa-plus{
     margin: 24px 10px;
     cursor: pointer;
-}
-
-.library .library__content .fa-plus:hover{
-    color: #fff;
-    zoom: 105%;
 }
 
 .section-playlist{
@@ -131,7 +112,6 @@ body{
 .section-playlist__content .text{
     padding-bottom: 14px;
     color: #fff;
-    font-family: "DM Sans", sans-serif;
     cursor: default;
 }
 
@@ -152,7 +132,6 @@ body{
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-decoration: none;
     text-transform: none;
     margin-top: 12px;
@@ -160,10 +139,6 @@ body{
     border: 0px;
     width: 113px;
     cursor: pointer;
-}
-
-.section-playlist__content .section-playlist__button:hover{
-    zoom: 105%;
 }
 
 .sidebar .cookies{
@@ -177,10 +152,6 @@ body{
     text-decoration: none;
 }
 
-.sidebar .cookies a:hover{
-    text-decoration: underline;
-}
-
 .languages .languages__button{
     background-color: transparent;
     border: 1px solid #878787;
@@ -191,11 +162,6 @@ body{
     margin: 8px;
     padding: 8px;
     border-radius: 20px;
-}
-
-.languages .languages__button:hover{
-    zoom: 105%;
-    border: 2px solid #878787;
 }
 
 footer{
@@ -222,7 +188,6 @@ footer .footer{
 .footer .footer__content .text{
     color: #fff;
     padding-bottom: 12px;
-    font-family: "DM Sans", sans-serif;
 }
 
 .footer .footer__content .title{
@@ -248,7 +213,6 @@ footer .footer{
     border-radius: 20px;
     font-size: 16px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-decoration: none;
     text-transform: none;
     padding: 8px;
@@ -257,4 +221,26 @@ footer .footer{
     min-width: 170px;
     cursor: pointer;
     margin-right: 20px;
+}
+
+.footer .footer__button:hover, .section-playlist__content .section-playlist__button:hover{
+    transform: scale(1.1);
+}
+
+.sidebar nav ul li a:hover, .library .library__content .fa-plus:hover{
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.languages .languages__button:hover{
+    transform: scale(1.05);
+}
+
+.library .library__button:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.sidebar .cookies a:hover{
+    text-decoration: underline;
 }
